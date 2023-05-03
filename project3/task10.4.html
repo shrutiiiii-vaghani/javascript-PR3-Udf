@@ -1,0 +1,28 @@
+<script type="text/javascript">
+
+var a = parseInt(prompt("Enter a your age :"));
+
+    var ans = age(a);
+
+    switch (ans) {
+        case 1:
+            console.log("You can vote..");
+            document.write("You can vote..");
+            break;
+        case 2:
+            console.log("You can not vote..");
+            document.write("You can not vote..");
+            break;
+    }
+
+    function age(a) {
+
+        if (a >= 18) {
+            return 1;
+        } else {
+            return 2;
+        }
+    }
+
+
+</script>

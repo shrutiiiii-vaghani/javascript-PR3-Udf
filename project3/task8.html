@@ -1,0 +1,34 @@
+<script type="text/javascript">
+
+    function choice() {
+        var a = 10;
+        var b = 5;
+
+        var choice = (prompt("Enter a choice(+ , - , * , /) :"));
+
+        switch (choice) {
+            case '+':
+                console.log("Ans = " + (a + b));
+                document.write("Ans = " + (a + b));
+                break;
+            case '-':
+                console.log("Ans = " + (a - b));
+                document.write("Ans = " + (a - b));
+                break;
+            case '*':
+                console.log("Ans = " + (a * b));
+                document.write("Ans = " + (a * b));
+                break;
+            case '/':
+                console.log("Ans = " + (a / b));
+                document.write("Ans = " + (a / b));
+                break;
+            default:
+                console.log("Invalid choice");
+                document.write("Invalid choice");
+        }
+    }
+    choice();
+
+
+</script>

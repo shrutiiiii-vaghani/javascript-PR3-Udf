@@ -1,0 +1,32 @@
+<script type="text/javascript">
+
+    var a = parseInt(prompt("Enter a number of A :"));
+    var b = parseInt(prompt("Enter a number of B :"));
+    var c = parseInt(prompt("Enter a number of C :"));
+
+    var ans = third(a, b, c);
+
+    switch (ans) {
+        case 1: console.log("A is big.."); document.write("A is big.."); break;
+        case 2: console.log("B is big.."); document.write("B is big.."); break;
+        case 3: console.log("C is big.."); document.write("C is big.."); break;
+    }
+
+    function third(a, b, c) {
+        if (a > b) {
+            if (a > c) {
+                return 1;
+            } else {
+                return 3;
+            }
+        } else {
+            if (b > c) {
+                return 2;
+            } else {
+                return 3;
+            }
+        }
+    }
+    third(a, b, c);
+
+</script>

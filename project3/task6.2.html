@@ -1,0 +1,24 @@
+<script type="text/javascript">
+
+    var a = parseInt(prompt("Enter a number of A :"));
+    var b = parseInt(prompt("Enter a number of B :"));
+
+    function swap(a, b) {
+        document.write("Enter a number of A : " + a);
+        document.write("<br>");
+        document.write("Enter a number of B : " + b);
+        document.write("<br>");
+        document.write("<br>");
+
+        a = a + b;
+        b = a - b;
+        a = a - b;
+
+        document.write("Enter a number of A : " + a);
+        document.write("<br>");
+        document.write("Enter a number of B : " + b);
+        document.write("<br>");
+    }
+    swap(a, b);
+
+</script>

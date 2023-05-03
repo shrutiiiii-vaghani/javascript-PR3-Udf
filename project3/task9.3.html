@@ -1,0 +1,33 @@
+<script type="text/javascript">
+
+    var ans = triangle();
+
+    switch (ans) {
+        case 1:
+            console.log("This angle is Triangle");
+            document.write("This angle is Triangle");
+        break;
+        case 2:
+            console.log("This angle is not Triangle");
+            document.write("This angle is not Triangle");
+        break;
+    }
+
+
+    function triangle() {
+
+        var a = parseInt(prompt("Enter a number of A:"));
+        var b = parseInt(prompt("Enter a number of B:"));
+        var c = parseInt(prompt("Enter a number of C:"));
+
+
+        if (a + b + c == 180) {
+            return 1;
+        } else {
+            return 2;
+        }
+
+    }
+
+
+</script>

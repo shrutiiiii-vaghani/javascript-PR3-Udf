@@ -1,0 +1,30 @@
+<script type="text/javascript">
+
+    function swap1() {
+        var a = parseInt(prompt("Enter a number of A :"));
+        return a;
+    }
+    function swap2() {
+        var b = parseInt(prompt("Enter a number of B :"));
+        return b;
+    }
+
+    var ans1 = swap1();
+    var ans2 = swap2();
+
+    swap();
+
+    function swap() {
+
+        ans1 = ans1 + ans2;
+        ans2 = ans1 - ans2;
+        ans1 = ans1 - ans2;
+
+        console.log("A = " + ans1);
+        document.write("A = " + ans1);
+        document.write("<br>");
+        console.log("B = " + ans2);
+        document.write("B = " + ans2);
+    }
+
+</script>
